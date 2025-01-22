@@ -2,9 +2,9 @@
 
 ![histogram](assets/images/histogram.png)
 
-[Publication](https://www.google.co.uk/)
-
 # PGA Tour Golf Data Project
+
+![PGA Logo](assets/images/PGA_TOUR_LOGO.png)
 
 ## Executive Summary
 
