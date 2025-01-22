@@ -28,3 +28,19 @@ There are 3 data sets in total, because I couldn’t find a single dataset that 
 
 After exploring the 3 datasets using the table visualiser in Power BI, I concluded that I could get everything I needed from just 2 of the tables, The Tournament Information and The Player Statistics data tables. 
 
+## Data Engineering
+
+I have a dataset that contains individual players statistics over the seasons and another with all the tournament information over seasons. These are both .csv files that I have ingested into Power BI using the Power Query Editor tool. 
+The reason for using Power BI is for its strong ability to engineer data using M-code within the editor tool and the large variety of visuals available to showcase the data on a dashboard.  
+
+I’ve linked the datasets using player name as the primary key. 
+
+There was a challenge with this as 1 dataset used the players full name along with the year and another used the first initial and surname. 
+
+E.g. Rory McIlroy (2019) and R.McIlroy  
+
+Firstly, I removed the year and put this into a new column using this code:
+
+ 
+
+Then I put the player name into another column:
