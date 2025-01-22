@@ -1,6 +1,6 @@
 # BPP Data-Science-Portfolio
 
-![histogram](assets/images/histogram.png)
+![BPP_Logo](assets/images/Bpp_small.png)
 
 # PGA Tour Golf Data Project
 
