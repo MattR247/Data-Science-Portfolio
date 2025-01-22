@@ -41,6 +41,37 @@ E.g. Rory McIlroy (2019) and R.McIlroy
 
 Firstly, I removed the year and put this into a new column using this code:
 
- ![histogram](assets/images/001_Data_Engineering.png)
+ ![Image](assets/images/001_Data_Engineering.png)
 
 Then I put the player name into another column:
+
+ ![Image](assets/images/002_Data_Engineering.png)
+
+Then I did a transformation of the full player name to just initial and surname:
+ 
+ ![Image](assets/images/003_Data_Engineering.png)
+
+Before:                                                             After:
+ ![Image](assets/images/004_Data_Engineering.png)                   ![Image](assets/images/005_Data_Engineering.png)
+
+Before:                                                             After:
+ ![Image](assets/images/006_Data_Engineering.png)                   ![Image](assets/images/007_Data_Engineering.png)
+
+
+Because there are duplicate players fort each year, I chose to create a unique players table that I could use to connect to my 2 information tables using the primary key that I created. To create this table, I used the following DAX code:
+ ![Image](assets/images/008_Data_Engineering.png) 
+
+This meant I could have my 2 information tables connect to a reference table to create a star schema data table design. See below:
+ ![Image](assets/images/009_Data_Engineering.png)
+
+The table relationships are the ‘many to one’ joining type, this enables me to aggregate date at an individual player level. 
+The 2 pieces of data that I wanted to aggregate are the average player driving distances from the player statistics table and the player finishing positions from the tournament information table. 
+
+I used the following DAX queries to create calculated columns within my player’s table. 
+
+Ave DD (average driving distance) :
+![Image](assets/images/010_Data_Engineering.png) 
+
+Ave Position (average finishing position)
+![Image](assets/images/011_Data_Engineering.png) 
+
