@@ -4,16 +4,27 @@
 
 [Publication](https://www.google.co.uk/)
 
-# Heading 1 - Title
+# PGA Tour Golf Data Project
 
-## Heading 2 - Sub Heading
+## Executive Summary
 
-### Heading 3 - 2nd Sub Heading
+This project looks at data from the professional sport of golf, specifically the elite tour in America, the PGA (Professional Golf Association) Tour.
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+I am going to look at how important the 1st shot off the tee on each hole is, by looking to see if the ball distance off the tee has a correlation to overall performance. This 1st shot is known as ‘the drive’ and so you will see me refer to this metric in the report as ‘driving distance’.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+My hypothesis is that if you hit the ball further off the tee with the 1st shot, this will lead to lower scores on the hole overall, which in turn results in a lower score of the tournament. The significance of this is the player with the least number of shots wins the tournament. 
 
-Combined emphasis with **asterisks and _underscores_**.
+I will use regression analysis technique to highlight any correlations. I also plan to do some time series analysis to see if there are any changes over the 8 years of data that I have. 
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+I have researched the use of linear regression from (Linear regression. Su, X et al. 2012.) 
+
+## Data Infrastructure and Tools
+
+I have managed to download public data sets taken from all the PGA tour tournaments over 8 years (seasons) from the website Kaggle.
+
+The files are .csv files, which are easy to ingest into my chosen analytics tool Microsoft Power BI. These types of data files are classed as structured data because they are already formatted in a table using columns with pre-defined field names and are easier to use than other sources like unstructured data which can include pictures or information within PDF files where the data is more difficult to extract and analyse.  
+
+There are 3 data sets in total, because I couldn’t find a single dataset that had everything I required. This means that I had to join the data using star schema in Power BI. All data sets were ingested individually and then I explored the data to see how to make the joins on the 3 tables. 
+
+After exploring the 3 datasets using the table visualiser in Power BI, I concluded that I could get everything I needed from just 2 of the tables, The Tournament Information and The Player Statistics data tables. 
+
