@@ -41,6 +41,6 @@ E.g. Rory McIlroy (2019) and R.McIlroy
 
 Firstly, I removed the year and put this into a new column using this code:
 
- 
+ ![histogram](assets/images/001 Data Engineering.png)
 
 Then I put the player name into another column:
