@@ -79,30 +79,22 @@ Ave Position (average finishing position)
 
 My completed dashboard visual can be seen here:
 
-I have added a clear title and included the tour logo, which would be well recognised by anyone who follows the sport. I chose to use a dark green and gold colour scheme; this relates to the flagship competition on the tour ‘The Masters’ which is held once a year.  
+![Image](assets/images/001_Data_Visuals.png)
 
- 
-
-
-
-
-
-
-
-
+I have added a clear title and included the tour logo, which would be well recognised by anyone who follows the sport. I chose to use a dark green and gold colour scheme; this relates to the flagship competition on the tour ‘The Masters’ which is held once a year. 
 
 I have chosen to firstly do some lineal regression analysis using my 2 variables of driving distance and tournament finishing position. The visual in Power BI that allows me to do this is a scatter chart. 
 This chart allows you to plot 2 variables over the x and y axis to see if there is any correlation. 
+
+![Image](assets/images/002_Data_Visuals.png)
  
 The reason for choosing this chart is that you can then get the visual to plot a line to show any relationship trend between the 2 variables. This allows the audience to easily conclude the data without having to analyse the information themselves.
 
 To aid the audience I’ve also included a matrix table visual, that allows me to show the audience the values for each player that is being plot onto the chart. I chose this visual because I can sort the data from lowest to highest average finishing position. Another reason for this visual was that I can use conditional formatting to highlight where the driving distance data exceeds 300 yards. I come onto the significance of this in my data analytics section.
- 
+
+![Image](assets/images/003_Data_Visuals.png)
 
 I’ve also included 2 filters so that the report user can change the visuals to look at specific seasons or tournaments.
-
-
-
 
 
 
@@ -115,13 +107,15 @@ The datasets combined include 38k rows of information, so to make sense of this,
 When doing the linear regression analysis, I could see overall from the 8 years of data that there was a positive correlation between how far a player can hit the ball with the tee shot and their finishing positions in the tournaments. The trendline shows that the further you can drive the ball (y-axis) the more likely you are to finish in the higher finishing positions (x-axis).
 Each marker on the scatter chart represents a unique individual player. 
 
-  
+![Image](assets/images/001_Data_Analysis.png)  
  
 This is backed up by the player ranking tables where I have sorted the players by the average finishing position by descending. I’ve then used conditional formatting to highlight the average driving distances over 300 yards. See table extract below showing the top 15 players, 11 (73%) of which have a driving distance over 300 yards.
- 
+
+ ![Image](assets/images/002_Data_Analysis.png)  
 
 When completing this analysis, I thought it was also work while looking at the trend of driving distance over time. When taking all players and averaging the total driving distance over seasons, we can so an increasing trend over time. This shows that the players are aware of the importance of this 1st shot off the tee and have trained to hit it longer. The chart below represents the times series analysis of this metric.
- 
+
+ ![Image](assets/images/003_Data_Analysis.png)  
 
 This information can be used to present to any new players looking to compete at the highest level and can make them aware of the importance of driving the ball long. This can then get them to focus their training on the driving shot and steer them to work in the gym on certain muscle groups to aid them to increase their driving statistics.  
 
